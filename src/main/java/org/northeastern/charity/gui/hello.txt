@@ -1,0 +1,48 @@
+Remove this file
+# Donation Request / User
+
+**User enters details** → **Selects from different NGOs** → **Select category of donation.**
+
+(Food = pledge meals /Monetary = donate money) → If monetary, enters custom input/ If food, value is auto loaded based on number of meals selected → **click donate button** → 
+
+receives popup message showing that the donation has been made.
+
+# Donation Request / NGO
+
+NGO reviews Active donation requests → Asks for admin’s approval
+
+# Donation Request / Admin
+
+Admin receives request → Admin Approves funds
+
+# Donation Request / Transaction
+
+Receives fund from user → checks for NGO’s approval from Admin → allocates funding for NGO.
+
+# Distribution Request/ Foundation
+
+**Organization/ Foundation Asks for Food help** (Contains number of meals, Address) → **NGO Reviews the organizations request checks details** → **Forwards request to Hotel welfare management portal** → **Hotel sees the request** → **Approves request**
+
+# Distribution Request/ NGO
+
+**NGO Reviews the organizations request checks details → Forwards request to Hotel welfare management portal**
+
+# Distribution Request/ Hotel Welfare Management
+
+**Hotel sees the request → Approves request →Awaits for pickup**
+
+# Distribution Request/ Logistics
+
+**views active pickup requests → confirms pickup → Delivers to organization**
+
+# Foundation Help Request / Foundation
+
+**Organization puts out a request for monetary help** 
+
+# Foundation Help Request / Admin
+
+**Admin reviews request → Admin approves request**
+
+# Foundation Help Request / Transaction Organization
+
+**Checks for requests approval from admin →Transaction Organization allocates the required amount.**
