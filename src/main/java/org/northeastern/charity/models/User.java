@@ -31,9 +31,9 @@ public class User {
     private String password;
 
     @Column(name = "phone_number")
-    private BigInteger phoneNumber;
+    private String phoneNumber;
 
-    public User(String userName, String email, String password, BigInteger phoneNumber) {
+    public User(String userName, String email, String password, String phoneNumber) {
         this.userName = userName;
         this.email = email;
         this.password = password;

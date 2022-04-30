@@ -11,7 +11,7 @@ public class UserServiceTest {
 
         UserService userService = new UserService();
 
-        userService.createUser("Achyuth", "achyuth@email.com", "achyuth", 9988223311);
+        userService.createUser("Achyuth", "achyuth@email.com", "achyuth", "2211992233");
 
 
     }
