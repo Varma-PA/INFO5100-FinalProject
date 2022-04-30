@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.Hibernate;
 
+import java.math.BigInteger;
 import java.util.Objects;
 
 @Entity
@@ -30,9 +31,9 @@ public class User {
     private String password;
 
     @Column(name = "phone_number")
-    private Long phoneNumber;
+    private BigInteger phoneNumber;
 
-    public User(String userName, String email, String password, Long phoneNumber) {
+    public User(String userName, String email, String password, BigInteger phoneNumber) {
         this.userName = userName;
         this.email = email;
         this.password = password;
