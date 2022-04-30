@@ -11,25 +11,14 @@ public class UserServiceTest {
     UserService userService = new UserService();
 
     @Test
-    public void createUserInDB(){
-
-//        UserService userService = new UserService();
-
+    public void createUserInDB() {
         userService.createUser("achyuth", "hemanth@email.com", "achyuth", "2211992233");
-
-
     }
 
     @Test
-    public void getUsersList(){
-
-//        UserService userService = new UserService();
-
-
+    public void getUsersList() {
         List<User> getUsersByGivenName = userService.getUsersByName("achyuth");
-
         getUsersByGivenName.forEach(System.out::println);
-
     }
 
 
