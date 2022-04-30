@@ -36,9 +36,7 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.24</version>
-        </dependency>
-
-
+      </dependency>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
@@ -46,8 +44,7 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
-
-
+  
 
     </dependencies>
 
