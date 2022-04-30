@@ -1,13 +1,13 @@
 package org.northeastern.charity.service;
 
 import com.mysql.cj.Session;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.EntityTransaction;
-import jakarta.persistence.Persistence;
+import jakarta.persistence.*;
 import org.hibernate.SessionFactory;
 import org.northeastern.charity.models.Person;
 import org.northeastern.charity.models.User;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserService {
 
@@ -42,8 +42,21 @@ public class UserService {
     }
 
 
-    public void getUsersByName(String givenName){
+    public List<User> getUsersByName(String givenName){
 
+        List<User> getUsers;
+
+        entityTransaction.begin();
+
+        TypedQuery<User> namedQuery = entityManager.createNamedQuery("User.byName", User.class);
+
+        namedQuery.setParameter(1, givenName);
+
+        getUsers = namedQuery.getResultList();
+
+        entityTransaction.commit();
+
+        return getUsers;
     }
 
 

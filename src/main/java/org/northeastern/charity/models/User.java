@@ -14,6 +14,7 @@ import java.util.Objects;
 @Setter
 @ToString
 @RequiredArgsConstructor
+@NamedQuery(name = "User.byName", query = "SELECT u FROM User u where u.userName=?1")
 public class User {
 
     @Id
