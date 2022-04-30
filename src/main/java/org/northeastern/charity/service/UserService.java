@@ -24,7 +24,7 @@ public class UserService {
     }
 
 
-    public void createUser(String name, String email, String password, Long phoneNumber){
+    public void createUser(String name, String email, String password, String phoneNumber){
 
         entityTransaction.begin();
 
